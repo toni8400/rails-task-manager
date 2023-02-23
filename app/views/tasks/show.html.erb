@@ -1,0 +1,7 @@
+<h1><%= @task.title %></h1>
+<p>Details: <%= @task.details %></p>
+<p>Completed: <%= @task.completed %></p>
+<%= link_to 'Back to index', tasks_path %>
+<%= link_to 'Edit', edit_task_path %>
+
+<%= link_to 'Delete this task', task_path(@task), data: {turbo_method: 'DELETE'} %>
